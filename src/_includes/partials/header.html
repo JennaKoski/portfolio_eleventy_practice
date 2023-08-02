@@ -1,0 +1,14 @@
+<header class="site__header">
+    <div class="header__container">
+        <a href="/" aria-label="{{ site.name }}" class="site__heading">{{ site.name }}</a>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                {% for item in navigation.items %}
+                <li class="navlist__item">
+                    <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+                </li>
+                {% endfor %}
+              </ul>
+        </nav>
+    </div>
+</header>

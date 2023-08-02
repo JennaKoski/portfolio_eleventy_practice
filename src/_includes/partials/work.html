@@ -1,0 +1,22 @@
+<article>
+    <div class="work__container">
+        <div>
+            <h2 class="work__heading">
+                {{ work.title }}
+            </h2>
+            <p class="work__summary">
+                {{ work.summary }}
+            </p>
+        </div>
+        {% for item in collections.work %}
+        <a href="{{ item.url }}" aria-label="See {{ item.data.title }}" class="work__item">
+            <img
+                src="{{ item.data.hero.image }}"
+                alt="{{ item.data.hero.imageAlt }}"
+                loading="lazy"
+                class="hero__img"
+            />
+        </a>
+        {% endfor %}
+    </div>
+</article>
