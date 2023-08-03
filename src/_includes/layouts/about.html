@@ -1,0 +1,22 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+<article>
+    <div class="about__container">
+        <h2 class="about__heading">
+            {{ title }}
+        </h2>
+        <p class="about__text">
+            {{ text }}
+        </p>
+        <img
+            src="{{ hero.image }}"
+            alt="{{ hero.imageAlt }}"
+            loading="lazy"
+            class="about__img"
+        />
+    </div>
+</article>
+
+{% endblock %}

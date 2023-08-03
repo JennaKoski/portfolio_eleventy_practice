@@ -13,6 +13,12 @@ module.exports = config => {
             .sort((a, b) => (Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1));
     });
 
+    // Returns about items
+    config.addCollection('about', collection => {
+        return collection
+            .getFilteredByGlob('./src/about/*.md')
+    });
+
     return {
         markdownTemplateEngine: 'njk',
         dataTemplateEngine: 'njk',
