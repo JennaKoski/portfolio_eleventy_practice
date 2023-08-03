@@ -3,6 +3,11 @@
     display: flex;
     justify-content: space-between;
     margin: 2rem;
+    max-width: 80vw;
+
+    @media screen and (max-width: 1800px) {
+        max-width: 92vw;
+    }
 }
 
 .site__heading {

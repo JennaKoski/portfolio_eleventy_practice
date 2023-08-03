@@ -32,7 +32,11 @@
     }
 
     .intro__image {
-        max-width: 60vw;
+        max-width: 80vw;
+
+        @media screen and (max-width: 1800px) {
+            max-width: 92vw;
+        }
     }
 }
 
@@ -54,5 +58,13 @@
 
     .work__summary {
         margin: 1rem 0;
+    }
+
+    .work__history {
+
+        .work__history_heading {
+            color: rgb(235, 247, 156);
+            margin: 1rem 0;
+        }
     }
 }
