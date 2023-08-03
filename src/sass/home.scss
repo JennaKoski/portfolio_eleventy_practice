@@ -21,16 +21,6 @@
         margin-bottom: 1rem;
     }
 
-    .button {
-        background-color: rgb(231, 241, 167);
-        border-radius: 5px;
-        color: rgb(53, 53, 53);
-        max-width: 8rem;
-        padding: 1rem;
-        text-align: center;
-        text-decoration: none;
-    }
-
     .intro__image {
         max-width: 80vw;
 
@@ -40,15 +30,11 @@
     }
 }
 
-.work__container {
+.featured__container {
     color: rgb(250, 250, 250);
     margin: 2rem;
 
-    .hero__img {
-        max-width: 30vw;
-    }
-
-    .work__heading {
+    .featured__heading {
         color: rgb(235, 247, 156);
         font-size: 1.8rem;
         margin: 1rem 0;
@@ -56,15 +42,36 @@
         text-shadow: 0 0 1px rgb(231, 241, 167);
     }
 
-    .work__summary {
+    .featured__item_heading {
+        color: rgb(235, 247, 156);
         margin: 1rem 0;
     }
 
-    .work__history {
+    .featured__summary {
+        margin: 1rem 0;
+    }
 
-        .work__history_heading {
-            color: rgb(235, 247, 156);
-            margin: 1rem 0;
-        }
+    .featured__img {
+        max-width: 25vw;
+    }
+
+    .featured__button {
+        margin: 2rem 0;
+    }
+}
+
+.button {
+    background-color: rgb(231, 241, 167);
+    border-radius: 5px;
+    box-shadow: inset 0 0 3px rgb(53, 53, 53);
+    color: rgb(53, 53, 53);
+    max-width: 8rem;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+        box-shadow: inset 0 0 6px rgb(53, 53, 53);
+        text-shadow: 0 0 1px rgb(53, 53, 53);
     }
 }

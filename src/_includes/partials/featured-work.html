@@ -1,5 +1,5 @@
-<article class="">
-    <div class="">
+<article>
+    <div class="featured__container">
         <div class="">
             <h2 class="featured__heading">
                 {{ featuredWork.title }}
@@ -9,6 +9,12 @@
             </p>
         </div>
         {% for item in collections.featuredWork %}
+        <h3 class="featured__item_heading">
+            {{ item.data.title }}
+        </h3>
+        <p class="featured__summary">
+            {{ item.data.summary }}
+        </p>
         <a
             href="{{ item.url }}"
             aria-label="See {{ item.data.title }}"
@@ -22,7 +28,7 @@
             />
         </a>
         {% endfor %}
-        <div class="">
+        <div class="featured__button">
             <a href="/work/" class="button">See more work</a>
         </div>
     </div>

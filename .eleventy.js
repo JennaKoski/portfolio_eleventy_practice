@@ -11,6 +11,13 @@ module.exports = config => {
         return collection
             .getFilteredByGlob('./src/work/*.md')
             .sort((a, b) => (Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1))
+    });
+
+    // Returns work items, sorted by display order then filtered by featured
+    config.addCollection('featuredWork', collection => {
+        return collection
+            .getFilteredByGlob('./src/work/*.md')
+            .sort((a, b) => (Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1))
             .filter(x => x.data.featured);
     });
 
