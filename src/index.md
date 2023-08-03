@@ -9,7 +9,7 @@ intro:
   buttonUrl: '/about'
   image: '/images/testimage2.jpg'
   imageAlt: 'Snowy mountains'
-work:
+featuredWork:
   title: 'My work'
   summary: 'This is my work history in a nutshell.'
 ---

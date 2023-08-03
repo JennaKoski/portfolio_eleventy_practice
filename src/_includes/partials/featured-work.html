@@ -1,0 +1,29 @@
+<article class="">
+    <div class="">
+        <div class="">
+            <h2 class="featured__heading">
+                {{ featuredWork.title }}
+            </h2>
+            <p class="featured__summary">
+                {{ featuredWork.summary }}
+            </p>
+        </div>
+        {% for item in collections.featuredWork %}
+        <a
+            href="{{ item.url }}"
+            aria-label="See {{ item.data.title }}"
+            class="featured__item"
+        >
+            <img
+                src="{{ item.data.hero.image }}"
+                alt="{{ item.data.hero.imageAlt }}"
+                loading="lazy"
+                class="featured__img"
+            />
+        </a>
+        {% endfor %}
+        <div class="">
+            <a href="/work/" class="button">See more work</a>
+        </div>
+    </div>
+</article>

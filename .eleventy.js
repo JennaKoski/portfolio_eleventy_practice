@@ -10,7 +10,8 @@ module.exports = config => {
     config.addCollection('work', collection => {
         return collection
             .getFilteredByGlob('./src/work/*.md')
-            .sort((a, b) => (Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1));
+            .sort((a, b) => (Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1))
+            .filter(x => x.data.featured);
     });
 
     // Returns about items

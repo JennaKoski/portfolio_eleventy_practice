@@ -1,27 +1,31 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
 <article>
     <div class="work__container">
         <div>
             <h2 class="work__heading">
-                {{ work.title }}
+                {{ title }}
             </h2>
-            <p class="work__summary">
-                {{ work.summary }}
-            </p>
         </div>
         <div class="work__history">
             {% for item in collections.work %}
             <h3 class="work__history_heading">
                 {{ item.data.title }}
             </h3>
+            <p class="work__text">
+                {{ item.data.text }}
+            </p>
             <a href="{{ item.url }}" aria-label="See {{ item.data.title }}" class="work__item">
                 <img
                     src="{{ item.data.hero.image }}"
                     alt="{{ item.data.hero.imageAlt }}"
                     loading="lazy"
-                    class="hero__img"
+                    class="work__img"
                 />
             </a>
             {% endfor %}
         </div>
     </div>
 </article>
+{% endblock %}

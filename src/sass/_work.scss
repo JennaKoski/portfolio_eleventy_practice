@@ -1,0 +1,25 @@
+.work__container {
+    color: rgb(250, 250, 250);
+    margin: 2rem;
+    max-width: 80vw;
+
+    .work__heading {
+        color: rgb(235, 247, 156);
+        font-size: 1.8rem;
+        margin: 1rem 0;
+    }
+
+    .work__history_heading {
+        color: rgb(235, 247, 156);
+        margin: 1rem 0;
+    }
+
+    .work__text {
+        margin: 1rem 0;
+    }
+
+    .work__img {
+        max-width: 30vw;
+    }
+
+}
