@@ -1,6 +1,13 @@
 <header class="site__header">
     <div class="header__container">
-        <a href="/" aria-label="{{ site.name }}" class="site__heading">{{ site.name }}</a>
+        <div class="header__left">
+            <a href="/" class="site__logo">
+                <img src="../images/logo.png" class="logo"/>
+            </a>
+            <a href="/" aria-label="{{ site.name }}" class="site__heading">
+                {{ site.name }}
+            </a>
+        </div>
         <nav class="header__nav">
             <ul class="nav__list">
                 {% for item in navigation.items %}
