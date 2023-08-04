@@ -5,6 +5,6 @@ text: 'I am currently working in a software company Druid Oy as a Full Stack Web
 displayOrder: 1
 featured: true
 hero:
-  image: '/images/testimage3.jpg'
+  image: '/images/mangusti.jpg'
   imageAlt: 'Landscape'
 ---

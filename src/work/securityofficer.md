@@ -6,6 +6,6 @@ text: 'I used to work as a Security Officer at Helsinki-Vantaa airport. Lorem ip
 displayOrder: 3
 featured: true
 hero:
-  image: '/images/testimage.jpg'
+  image: '/images/airplane.jpg'
   imageAlt: 'Alt 3'
 ---

@@ -1,0 +1,20 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<article>
+    <div class="contact__container">
+        <h2 class="contact__heading">
+            {{ title }}
+        </h2>
+        <p class="contact__text">
+            {{ text }}
+        </p>
+        <img
+            src="{{ hero.image }}"
+            alt="{{ hero.imageAlt }}"
+            loading="lazy"
+            class="contact__img"
+        />
+    </div>
+</article>
+{% endblock %}
