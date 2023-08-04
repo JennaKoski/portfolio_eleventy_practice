@@ -6,6 +6,12 @@ module.exports = config => {
         files: './dist/css/*.css'
     });
 
+    // Returns about items
+    config.addCollection('about', collection => {
+        return collection
+            .getFilteredByGlob('./src/about/*.md')
+    });
+
     // Returns work items, sorted by display order
     config.addCollection('work', collection => {
         return collection
@@ -21,10 +27,11 @@ module.exports = config => {
             .filter(x => x.data.featured);
     });
 
-    // Returns about items
-    config.addCollection('about', collection => {
+    // Returns interests items, sorted by display order
+    config.addCollection('interests', collection => {
         return collection
-            .getFilteredByGlob('./src/about/*.md')
+            .getFilteredByGlob('./src/interests/*.md')
+            .sort((a, b) => (Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1))
     });
 
     return {

@@ -1,0 +1,25 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<article>
+    <div class="interests__container">
+        <h2 class="interests__heading">
+            {{ title }}
+        </h2>
+        {% for item in collections.interests %}
+        <h3 class="interests__heading">
+            {{ item.data.title }}
+        </h3>
+        <p class="interests__text">
+            {{ item.data.text }}
+        </p>
+        <img
+            src="{{ item.data.hero.image }}"
+            alt="{{ item.data.hero.imageAlt }}"
+            loading="lazy"
+            class="interests__img"
+        />
+        {% endfor %}
+    </div>
+</article>
+{% endblock %}
