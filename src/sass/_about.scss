@@ -3,6 +3,10 @@
     margin: 2rem;
     max-width: 80vw;
 
+    @media screen and (max-width: 1800px) {
+        max-width: 92vw;
+    }
+
     .about__heading {
         color: rgb(235, 247, 156);
         font-size: 1.8rem;
@@ -16,7 +20,7 @@
     }
 
     .about__img {
-        max-width: 30vw;
+        max-height: 35vh;
     }
 
 }

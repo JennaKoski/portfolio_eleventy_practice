@@ -4,10 +4,10 @@ layout: 'layouts/home.html'
 pageStyle: 'home.css'
 intro:
   main: 'Welcome to my portfolio'
-  summary: 'My name is Jenna and I am a downhill skiing enthusiast, a pianist and a web developer.'
+  summary: 'My name is Jenna and I come from Finland. I have a big passion for downhill skiing, but also other sports such as horseback riding and crossfit. As for my career, I just switched from construction industry to IT and work as a web developer.'
   buttonText: 'Read more'
   buttonUrl: '/about'
-  image: '/images/testimage2.jpg'
+  image: '/images/mountains.jpg'
   imageAlt: 'Snowy mountains'
 featuredWork:
   title: 'My work'

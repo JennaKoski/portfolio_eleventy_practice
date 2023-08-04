@@ -19,6 +19,7 @@
 
     .intro__summary {
         margin-bottom: 1rem;
+        max-width: 80vw;
     }
 
     .intro__image {
@@ -42,17 +43,42 @@
         text-shadow: 0 0 1px rgb(231, 241, 167);
     }
 
+    .featured__summary {
+        margin: 1rem 0;
+    }
+
     .featured__item_heading {
         color: rgb(235, 247, 156);
         margin: 1rem 0;
     }
 
-    .featured__summary {
-        margin: 1rem 0;
+
+    .featured__section {
+        display: flex;
+        flex-direction: row;
+        max-width: 80vw;
+
+    @media screen and (max-width: 1800px) {
+        max-width: 92vw;
     }
 
-    .featured__img {
-        max-width: 25vw;
+        .featured__inner {
+            display: flex;
+            flex-direction: column;
+
+            .featured__summary {
+                margin-right: 2rem;
+                max-width: 30vw;
+            }
+
+            .featured__img {
+                margin-right: 2rem;
+                // max-width: 28vw;
+                max-height: 60vh;
+                width: fit-content;
+            }
+
+        }
     }
 
     .featured__button {

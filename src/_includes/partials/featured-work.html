@@ -1,6 +1,6 @@
-<article>
+<article class="featured__article">
     <div class="featured__container">
-        <div class="">
+        <div>
             <h2 class="featured__heading">
                 {{ featuredWork.title }}
             </h2>
@@ -8,26 +8,24 @@
                 {{ featuredWork.summary }}
             </p>
         </div>
+        <div class="featured__section">
         {% for item in collections.featuredWork %}
-        <h3 class="featured__item_heading">
-            {{ item.data.title }}
-        </h3>
-        <p class="featured__summary">
-            {{ item.data.summary }}
-        </p>
-        <a
-            href="{{ item.url }}"
-            aria-label="See {{ item.data.title }}"
-            class="featured__item"
-        >
-            <img
-                src="{{ item.data.hero.image }}"
-                alt="{{ item.data.hero.imageAlt }}"
-                loading="lazy"
-                class="featured__img"
-            />
-        </a>
-        {% endfor %}
+            <div class="featured__inner">
+                <h3 class="featured__item_heading">
+                    {{ item.data.title }}
+                </h3>
+                <p class="featured__summary">
+                    {{ item.data.summary }}
+                </p>
+                <img
+                    src="{{ item.data.hero.image }}"
+                    alt="{{ item.data.hero.imageAlt }}"
+                    loading="lazy"
+                    class="featured__img"
+                />
+            </div>
+            {% endfor %}
+        </div>
         <div class="featured__button">
             <a href="/work/" class="button">See more</a>
         </div>
